@@ -1,0 +1,96 @@
+/* SANA Events & Tours — mobile-first base styles
+   Load normalize.css before this file, then medium.css and large.css. */
+
+:root {
+    --primary-color: #082B60;
+    --secondary-color: #F5A900;
+    --accent-color: #064B50;
+
+    --background-color: #FFFFFF;
+    --surface-color: #F8E8C5;
+
+    --text-color: #172033;
+    --muted-color: #626B78;
+
+    --border-color: #E2E5E9;
+    --button-hover: #D99100;
+
+    --shadow: 0 4px 15px rgba(8, 43, 96, 0.12);
+
+    --nav-background: #082B60;
+    --nav-text: #FFFFFF;
+    --nav-hover: #F8E8C5;
+    --nav-active: #F5A900;
+    --hamburger-background: #F5A900;
+    --hamburger-color: #082B60;
+    --focus-color: #D99100;
+
+    --font-family: "Roboto", Arial, sans-serif;
+    --content-width: 1200px;
+    --radius: 0.6rem;
+}
+
+/* Global foundation */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 1rem;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+img {
+    height: auto;
+}
+
+a {
+    color: var(--primary-color);
+    text-underline-offset: 0.2em;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--focus-color);
+    outline-offset: 4px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0 0 0.75rem;
+    color: var(--primary-color);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+}
+
+h2 {
+    font-size: clamp(1.55rem, 6vw, 2.2rem);
+}
+
